@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- awsome icon -->
+    <script
+      src="https://kit.fontawesome.com/7b4657837f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ===== daisy Ui===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .comment {
+        background-color: #f4f7ff;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 6px;
+        border-radius: 8px;
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <!-- =============================================================================================== -->
+  <body id="body" class="bg-[#F4F7FF]">
+    <header class="pl-[98px] pr-[90px] pt-6 mb-5">
+      <nav class="flex justify-between bg-white px-6 py-4 rounded-xl">
+        <div class="flex items-center">
+          <div>
+            <img class="w-12 h-12" src="assets/logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+        </div>
+        <div class="flex gap-9 items-center">
+          <div
+            class="flex items-center bg-gray-200 rounded-3xl gap-2 px-4 py-2"
+          >
+            <img src="assets/checkbox.png" alt="" />
+            <h3 id="headerbtn" class="text-2xl font-bold">23</h3>
+          </div>
+          <div id="theme-color" class="bg-gray-200 rounded-full p-2">
+            <img class="w-9 h-9" src="assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pl-[100px] pr-[95px]">
+      <div class="flex gap-6">
+        <div class="w-[950px] h-[830px] bg-white rounded-2xl bg-cover mb-10">
+          <div class="flex p-4 gap-4 mb-5">
+            <div
+              class="flex items-center bg-[#F4F7FF] w-[263px] h-[100px] py-8 px-4 justify-center gap-5 rounded-xl"
+            >
+              <div class="bg-white rounded-full p-4">
+                <img class="w-7 h-7" src="assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <h2>Task Assigned </h2>
+                <h3 id="task-assined" class="font-bold text-2xl">05</h3>
+              </div>
+            </div>
+            <div
+              id="discover-button"
+              class="cursor-pointer flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-[524px] h-[100px] p-8 justify-center gap-5 rounded-xl"
+            >
+              <div>
+                <img class="" src="assets/board.png" alt="" />
+              </div>
+              <div>
+                <h2 class="text-2xl text-white">
+                  Discover Something <br />
+                  New Today!
+                </h2>
+              </div>
+            </div>
+            <div
+              class="flex items-center bg-[#F4F7FF] w-[263px] h-[100px] py-8 px-4 justify-center gap-2 rounded-xl"
+            >
+              <div class="bg-white rounded-full p-4">
+                <img class="w-7 h-7" src="assets/calender.png" alt="" />
+              </div>
+              <div>
+                <h2>Wed ,</h2>
+                <h3 id="the-date" class="font-bold text-xl">Jul 28 2025</h3>
+              </div>
+            </div>
+          </div>
+          <!--  ==========================card section========== -->
+          <section
+            class="grid grid-cols-3 p-5 gap-6 pt-8 border-t-2 border-dashed border-gray-300"
+          >
+            <!--===== card-1====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">ShopEase</button>
+                <h3
+                  id="first-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Debug using Chrome DevTools, check for overlappi
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="first-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!--===== card-2====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">CloudSync</button>
+                <h3
+                  id="second-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Add Dark Mode
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Store the user's preference in localStorage, update CSS varia
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="second-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!--===== card-3====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">SwiftPay</button>
+                <h3
+                  id="third-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Optimize Home page 
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Debug using Chrome DevTools, check for overlappi
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="third-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!--===== card-4====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">Meta</button>
+                <h3
+                  id="forth-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Add new emoji 🤲
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Debug using Chrome DevTools, check for overlappi
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="forth-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!--===== card-5====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">
+                  Google LLC
+                </button>
+                <h3
+                  id="fifth-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Integrate OpenAI API
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Store the user's preference in localStorage, update CSS varia
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="fifth-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!--===== card-6 ====== -->
+            <div class="bg-[#F4F7FF] p-5 w-[290px] h-[290px] rounded-lg">
+              <div class="border-b-2 border-dashed border-gray-300">
+                <button class="px-4 py-2 bg-white rounded-lg">Glassdoar</button>
+                <h3
+                  id="sixth-button-h3"
+                  class="mt-4 text-xl font-semibold title-all"
+                >
+                  Improve Job searching  
+                </h3>
+                <p class="bg-white rounded-lg p-4 text-gray-400 mb-3 mt-4">
+                  Debug using Chrome DevTools, check for overlappi
+                </p>
+              </div>
+              <div class="flex justify-between mt-3">
+                <div>
+                  <p>Deadline</p>
+                  <h4 class="">21 March 2025</h4>
+                </div>
+                <button
+                  id="sixth-button"
+                  class="completed py-2 px-5 bg-[#3752FD] rounded-lg text-white disabled:bg-blue-200"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ======================================================== -->
+
+        <div class="w-[386px] h-[830px] bg-white rounded-2xl">
+          <div
+            class="text-center items-center mt-6 border-b-2 border-dashed border-gray-300 pb-4"
+          >
+            <h1 class="mb-3">
+              <i class="fa-solid fa-clock-rotate-left"></i> Activity Log
+            </h1>
+            <button
+              id="remove-button"
+              class="py-2 px-5 bg-[#3752FD] rounded-lg text-white"
+            >
+              Completed
+            </button>
+          </div>
+          <div id="the-prant-div">
+            <p id="p-comment" class="comment"></p>
+            <!-- <p class="comment"></p> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ====================================java script========================================= -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
