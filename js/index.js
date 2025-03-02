@@ -19,7 +19,7 @@ for(const completedBtn of completedBtns){
     const taskAssined=document.getElementById('task-assined');
     const tasks=taskAssined.innerText
     const taskAss=parseInt(tasks);
-    if(taskAss===0){
+    if(taskAss===1){
        alert('congrates!!! you have completed the current task')
     }
     
